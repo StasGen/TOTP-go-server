@@ -14,7 +14,7 @@ func main() {
 
 	app.Get("/", generatePassCode)
 
-	app.Listen(3001)
+	app.Listen(3000)
 }
 
 func generatePassCode(c *fiber.Ctx) {
