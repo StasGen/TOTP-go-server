@@ -6,6 +6,6 @@ RUN go mod download
 
 COPY *.go ./
 
-RUN go build -a -installsuffix cgo -o app .
+RUN go build -o /app . 
 CMD [ "/app" ]
 
